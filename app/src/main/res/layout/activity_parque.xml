@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParqueActivity">
+
+    <Button
+        android:id="@+id/mapParque"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="btnMapaPq"
+        android:text="ComoChegar"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/siteIguatemi"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <Button
+        android:id="@+id/siteParque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="btnSitePq"
+        android:text="Site"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <Button
+        android:id="@+id/ligarParque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="btnMapa"
+        android:text="Ligar"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="148dp"
+        android:text="O Parque Natural dos Esportes Chico Mendes foi criado em dezembro de 1977 e constitui uma área verde com cobertura vegetal de eucaliptos, remanescentes de mata ciliar e áreas de regeneração natural de floresta semidecídua e transição para cerrado. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:text="Descrição"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Parque Chico Mendes"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@drawable/chicomendes" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="323dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/chicomendes2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
